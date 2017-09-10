@@ -1,0 +1,31 @@
+[server]
+host = "127.0.0.1"
+port = "5432"
+
+[[server.init]]
+Command = "grpc"
+User = "root"
+Port = "8090"
+
+[[server.init]]
+Command = "ssh"
+User = "root"
+Port = "22"
+
+[[servre.init]]
+Command = "agentd"
+User = "root"
+Port = "10080"
+
+[[server.init]]
+Command = "nginx"
+User = "root"
+Port = "80"
+
+
+[database]
+adapter = "postgres"
+database = "db_test"
+user = "minix"
+password = "1234567888"
+sslmode = "disable"
