@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	socket, err := net.DialUDP("udp", nil, &net.UDPAddr{IP: net.IPv4(127, 0, 0, 1), Port: 23456})
+	socket, err := net.DialUDP("udp", &net.UDPAddr{IP: net.ParseIP("127.0.0.1"), Port: 23456})
 	checkErr(err)
 
 	defer socket.Close()
