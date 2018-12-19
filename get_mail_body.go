@@ -46,7 +46,7 @@ func main() {
 
 	// Login
 	//if err := c.Login("mgtuiw@outlook.com", "messi123"); err != nil {
-	if err := c.Login("mgtuiw@mail.ru", "messi123"); err != nil {
+	if err := c.Login("mgtuiw@mail.ru", "xxxxxx"); err != nil {
 		log.Fatal(err)
 	}
 	log.Println("Logged in")
